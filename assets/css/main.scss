@@ -39,3 +39,78 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Custom styles to remove underlines from links */
+.page__content a {
+  text-decoration: none;
+}
+
+.page__content a:hover {
+  text-decoration: underline;
+}
+
+/* Custom styles for announcement banner */
+.page__content .notice--info {
+  background-color: #f0f0ff !important;
+  border-left: 4px solid #9B8FCC !important;
+  border-radius: 8px !important;
+  padding: 1.2em 1.5em !important;
+  margin: 0.5em 0 !important;
+  box-shadow: 0 2px 4px rgba(155, 143, 204, 0.1) !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+}
+
+.page__content .notice--info p {
+  font-size: 1em !important;
+  margin: 0 !important;
+}
+
+.page__content .notice--info strong {
+  color: #7A6B9A !important;
+  font-size: 1em !important;
+  font-weight: 600 !important;
+}
+
+/* Force publications to match About Me width - more aggressive approach */
+.list__item {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.archive__item {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.archive__item-title {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.archive__item-title a {
+  display: block !important;
+  width: 100% !important;
+}
+
+.archive__item p {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Override any container constraints */
+.page__content .list__item,
+.page__content .archive__item,
+.page__content .archive__item-title,
+.page__content .archive__item p {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
