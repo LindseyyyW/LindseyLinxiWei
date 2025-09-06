@@ -116,11 +116,14 @@
 }
 
 /* Force avatar to be perfectly circular */
-.author__avatar img {
+.author__avatar img,
+.sidebar .author__avatar img,
+.author__avatar img[src*="profile.png"] {
   border-radius: 50% !important;
   width: 175px !important;
   height: 175px !important;
   object-fit: cover !important;
   display: block !important;
   margin: 0 auto !important;
+  aspect-ratio: 1/1 !important;
 }
