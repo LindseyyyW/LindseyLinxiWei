@@ -114,3 +114,13 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+/* Force avatar to be perfectly circular */
+.author__avatar img {
+  border-radius: 50% !important;
+  width: 175px !important;
+  height: 175px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
